@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import  {Route, Switch, BrowserRouter} from 'react-router-dom'
+import MovieNavBar from './components/MovieNavBar/movienavbar';
+import Movie from './components/Movie/movie';
+import Favroute from './components/Favroute/Favroute';
+import WatchList from './components/Favroute/WatchList';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      
+<BrowserRouter>
+      <main className="container">
+       <MovieNavBar/>
+      <div className="contents">
+        <Switch>
+            <Route path='/movie/' component={Movie} />
+            <Route path='/favroute/' component={Favroute} />
+            <Route path='/watchlist/' component={WatchList} />
+        </Switch>
+        </div>
+      </main>
+      </BrowserRouter> 
+    );
+  }
 }
 
 export default App;

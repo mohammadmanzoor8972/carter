@@ -1,0 +1,15 @@
+.movie{
+    margin:10px;
+}
+
+.movie .container{
+    display: flex;
+    margin:10px;
+    flex-wrap: wrap;
+}
+
+.movie .container>div{
+  margin:5px;
+  width:340px;
+  height: 460px;
+}

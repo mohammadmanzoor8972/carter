@@ -1,0 +1,9 @@
+.favroute{
+    margin:10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.favroute>div{
+margin:10px;
+}
