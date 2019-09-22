@@ -4,7 +4,7 @@ import MovieNavBar from './components/MovieNavBar/movienavbar';
 import Movie from './components/Movie/movie';
 import Favroute from './components/Favroute/Favroute';
 import WatchList from './components/Favroute/WatchList';
-
+import "./App.css"
 class App extends React.Component {
   render() {
     return (
