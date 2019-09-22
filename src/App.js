@@ -17,6 +17,7 @@ class App extends React.Component {
             <Route path='/movie/' component={Movie} />
             <Route path='/favroute/' component={Favroute} />
             <Route path='/watchlist/' component={WatchList} />
+            <Route path="/" exact component={Movie} /> 
         </Switch>
         </div>
       </main>
