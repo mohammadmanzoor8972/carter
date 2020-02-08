@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { GetMoviesByKeyWord, GetMovieDetils } from '../../services/movies';
 import './style.css';
 import MovieItem from '../MovieItem/MovieItem';
   
